@@ -144,3 +144,8 @@ function animateValue(selector, end, duration = 300) {
     console.log("timer", timer);
     run();
 }
+
+
+if (location.protocol !== 'https:' && location.host.indexOf("bagiryash.com") != -1) {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
