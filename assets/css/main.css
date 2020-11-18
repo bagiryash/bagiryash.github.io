@@ -57,6 +57,8 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .timeline .content .arrow_box:before { border-color: rgba(194, 225, 245, 0); border-right-color: #c2e1f5; border-width: 18px; margin-top: -18px; }
 
+#calculator .special-heading { padding: 15px; }
+
 .calculator .nav .nav-item .nav-link { padding: 8px 15px; margin: 0 15px; color: #777; }
 
 .calculator .nav .nav-item .nav-link.active, .calculator .nav .nav-item .nav-link.active:hover { cursor: default; background: #fff; color: #000; }
