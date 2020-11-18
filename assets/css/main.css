@@ -1,0 +1,88 @@
+body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.top-logo { width: 125px; }
+
+.tp-caption.top-shadow-1 { text-shadow: 0 0 10px #fff; }
+
+.tp-caption.top-bg-1 { background: #ffffffdd; padding: 10px; box-shadow: 0 0 25px #fff; }
+
+.btn-resize-slider-1 { background: #ffffff; }
+
+.text-summary { color: #777; }
+
+.reviews-block { margin-top: 80px; }
+
+/* TIMELINE */
+.timeline { /* regular step */ }
+
+.timeline .step { position: relative; padding: 7px; display: flex; flex-direction: row; justify-content: flex-start; }
+
+.timeline .step:hover .circle { background: #0696D7; box-shadow: none; }
+
+.timeline .step:hover .line { background: #62cbfb; }
+
+.timeline .step:hover .content { box-shadow: inset 0 0 4px #0696D7; background: #fff; }
+
+.timeline .step:hover .time-scope { color: #0696D7; }
+
+.timeline .step .time-scope { color: #777; font-size: 12px; position: absolute; left: -40px; top: 50%; margin-top: -5px; }
+
+.timeline .v-stepper { position: relative; /*   visibility: visible; */ }
+
+.timeline .step .circle { background-color: white; box-shadow: 0 0 3px #8c8c8c; border-radius: 100%; width: 20px; /* +6 for border */ height: 20px; display: inline-block; }
+
+.timeline .step .line { top: 20px; left: 7px; /*   height: 120px; */ height: 100%; position: absolute; border-left: 0; box-shadow: inset 0 0 3px #ccc; background: #eee; width: 7px; }
+
+.timeline .step.completed .circle { visibility: visible; background-color: #0696D7; box-shadow: none; }
+
+.timeline .step.active .circle { visibility: visible; border-color: #0696D7; }
+
+.timeline .step.empty .circle { visibility: hidden; }
+
+.timeline .step.empty .line { /*     visibility: hidden; */ /*   height: 150%; */ top: 0; height: 150%; }
+
+.timeline .step:last-child .line { background: #fff; box-shadow: none; z-index: -1; /* behind the circle to completely hide */ }
+
+.timeline .content { margin-left: 20px; margin-bottom: 40px; display: inline-block; border-radius: 5px; background: #fdfdfd; max-width: 600px; padding: 20px; box-shadow: inset 0 0 3px #ccc; color: #777; }
+
+.timeline .content .title { font-size: 20px; color: #000; }
+
+.timeline .content .desc { margin-top: 20px; font-size: 14px; color: #555; }
+
+.timeline .content .arrow_box { position: relative; background: #fdfdfd; box-shadow: inset 0 0 3px #ccc; border: 0; }
+
+.timeline .content .arrow_box:after, .timeline .content .arrow_box:before { right: 100%; top: 50%; border: solid transparent; content: ""; height: 0; width: 0; position: absolute; pointer-events: none; }
+
+.timeline .content .arrow_box:after { border-color: rgba(255, 255, 255, 0); border-right-color: #ffffff; border-width: 15px; margin-top: -15px; }
+
+.timeline .content .arrow_box:before { border-color: rgba(194, 225, 245, 0); border-right-color: #c2e1f5; border-width: 18px; margin-top: -18px; }
+
+.calculator .nav .nav-item .nav-link { padding: 8px 15px; margin: 0 15px; color: #777; }
+
+.calculator .nav .nav-item .nav-link.active, .calculator .nav .nav-item .nav-link.active:hover { cursor: default; background: #fff; color: #000; }
+
+.calculator .nav .nav-item .nav-link:hover { background: #f0f0f0; color: #000; }
+
+.calculator .nav .nav-item .nav-link img { width: 40px; margin-right: 10px; }
+
+.calculator .calculator-block { padding: 20px; }
+
+.calculator .calculator-block .preview { margin-left: -15px; position: relative; width: 500px; height: 500px; background: #fff; border: 1px solid #ddd; display: none; }
+
+.calculator .calculator-block .preview.show { display: block; }
+
+.calculator .calculator-block .preview .size { position: absolute; font-size: 12px; font-weight: bold; padding: 5px; background: #fff; color: #1d78cb; }
+
+.calculator .calculator-block .calc-input { height: 40px; }
+
+.calculator .calculator-block .calculator-form { margin-top: 50px; display: none; }
+
+.calculator .calculator-block .calculator-form.show { display: block; }
+
+.calculator .calculator-block .calculator-sum { margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px; color: #777; }
+
+.calculator .calculator-block .calculator-sum span { color: #000; margin-left: 15px; font-size: 70px; }
+
+@media only screen and (min-width: 1280px) { .stepper { margin-left: -32px; left: 50%; position: relative; } .stepper .step { max-width: 600px; position: relative; } .stepper .step .content { margin-bottom: 0px; margin-top: 0px; } .stepper .step:nth-child(2n) { text-align: right; margin-left: -600px; } .stepper .step:nth-child(2n) .v-stepper { position: absolute; top: 0; bottom: 0; right: -27px; } .stepper .step:nth-child(2n) .time-scope { left: auto; right: -70px; } }
+
+/*# sourceMappingURL=main.css.map */
