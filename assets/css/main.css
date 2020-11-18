@@ -67,7 +67,7 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .calculator .calculator-block { padding: 20px; }
 
-.calculator .calculator-block .preview { margin-left: -15px; position: relative; width: 500px; height: 500px; background: #fff; border: 1px solid #ddd; display: none; }
+.calculator .calculator-block .preview { margin-left: -15px; position: relative; width: 500px; max-width: 100%; background: #fff; border: 1px solid #ddd; display: none; }
 
 .calculator .calculator-block .preview.show { display: block; }
 
