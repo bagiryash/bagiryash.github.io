@@ -83,9 +83,13 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .calculator .calculator-block .calculator-sum span { color: #000; margin-left: 15px; font-size: 70px; }
 
-.contact-us-block .breadcrumb-section .breadcrumb-inner h1.contact-us-title { font-size: 39px !important; }
+.contact-us-block .breadcrumb-section .breadcrumb-inner h1.contact-us-title { font-size: 35px !important; }
 
 .contact-us-block h1, .contact-us-block p, .contact-us-block a, .contact-us-block h4 { text-shadow: 0 0 3px #fff; }
+
+.contact-us-block .breadcrumb-section .breadcrumb-inner .breadcrumbs .breadcrumbs-1 { color: #333; }
+
+.contact-us-block .contact-info-wrap { max-width: 450px; background: #ffffffaa; padding: 20px; }
 
 @media only screen and (min-width: 1280px) { .stepper { margin-left: -32px; left: 50%; position: relative; } .stepper .step { max-width: 600px; position: relative; } .stepper .step .content { margin-bottom: 0px; margin-top: 0px; } .stepper .step:nth-child(2n) { text-align: right; margin-left: -600px; } .stepper .step:nth-child(2n) .v-stepper { position: absolute; top: 0; bottom: 0; right: -27px; } .stepper .step:nth-child(2n) .time-scope { left: auto; right: -70px; } }
 
