@@ -85,4 +85,6 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 @media only screen and (min-width: 1280px) { .stepper { margin-left: -32px; left: 50%; position: relative; } .stepper .step { max-width: 600px; position: relative; } .stepper .step .content { margin-bottom: 0px; margin-top: 0px; } .stepper .step:nth-child(2n) { text-align: right; margin-left: -600px; } .stepper .step:nth-child(2n) .v-stepper { position: absolute; top: 0; bottom: 0; right: -27px; } .stepper .step:nth-child(2n) .time-scope { left: auto; right: -70px; } }
 
+@media only screen and (max-width: 768px) { .stepper .step .time-scope { left: -27px; } }
+
 /*# sourceMappingURL=main.css.map */
