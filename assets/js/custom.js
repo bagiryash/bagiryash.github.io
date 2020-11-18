@@ -778,6 +778,10 @@ function Decrease2(){
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
+    if ($(this).closest(".au-navbar-mobile").is(":visible")) {
+        $(this).closest(".au-navbar-mobile").hide();
+    }
+
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
