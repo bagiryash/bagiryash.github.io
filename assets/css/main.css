@@ -83,6 +83,8 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .calculator .calculator-block .calculator-sum span { color: #000; margin-left: 15px; font-size: 70px; }
 
+.contact-us-block .special-heading { padding: 15px; }
+
 .contact-us-block .breadcrumb-section .breadcrumb-inner h1.contact-us-title { font-size: 35px !important; }
 
 .contact-us-block h1, .contact-us-block p, .contact-us-block a, .contact-us-block h4 { text-shadow: 0 0 3px #fff; }
