@@ -30,7 +30,7 @@ $(function() {
                 var $preview = $(".preview.show");
                 var link = $this.attr("data-link");
 
-                console.log('span', $preview.find(".size." + link).children("span").text());
+                // console.log('span', $preview.find(".size." + link).children("span").text());
                 animateValue($preview.find(".size." + link).children("span"), $this.val());
                 fillSizes();
                 refreshSum();
@@ -83,11 +83,11 @@ function fillSizes() {
     width = parseInt($cal.find(".calc-input.width").val() || 0);
     height = parseInt($cal.find(".calc-input.height").val() || 245);
     depth = parseInt($cal.find(".calc-input.depth").val() || 55);
-    console.log(width, height, depth);
+    // console.log(width, height, depth);
 }
 
 function refreshSum() {
-    console.log("Refresh sum", width, height, depth);
+    // console.log("Refresh sum", width, height, depth);
     calculate(width, height, depth);
 }
 
@@ -100,7 +100,7 @@ function calculate(width, height = 245, depth = 55) {
     }
 
     let sum = info.base + info.per100cm * width/100 * coef;
-    console.log("sum", sum, info, coef);
+    // console.log("sum", sum, info, coef);
     animateValue($sum.children("span"), sum, 500);
 }
 
@@ -115,7 +115,7 @@ function animateValue(selector, end, duration = 300) {
 
 
     var range = end - parseInt(obj.text());
-    console.log("obj", obj, end, range);
+    // console.log("obj", obj, end, range);
     // no timer shorter than 50ms (not really visible any way)
     var minTimer = 50;
     // calc step time to show all interediate values
@@ -132,7 +132,7 @@ function animateValue(selector, end, duration = 300) {
         var now = new Date().getTime();
         var remaining = Math.max((endTime - now) / duration, 0);
         var value = Math.round(end - (remaining * range));
-        console.log(value);
+        // console.log(value);
         obj.text(value);
         if (value == end) {
             clearInterval(timer);
@@ -141,7 +141,7 @@ function animateValue(selector, end, duration = 300) {
 
     timer = setInterval(run, stepTime);
     obj.attr("timer", timer);
-    console.log("timer", timer);
+    // console.log("timer", timer);
     run();
 }
 

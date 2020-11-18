@@ -779,7 +779,11 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
     if ($(this).closest(".au-navbar-mobile").is(":visible")) {
-        $(this).closest(".au-navbar-mobile").hide();
+        $(this).closest(".au-navbar-mobile").slideUp();
+
+        if ($(".hamburger").hasClass("is-active")) {
+            $(".hamburger").toggleClass("is-active");
+        }
     }
 
     $('html, body').animate({
